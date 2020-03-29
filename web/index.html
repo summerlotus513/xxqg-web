@@ -1,0 +1,66 @@
+<!--如部署自己服务器请保留底部版权-->
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <title>学习强国挑战答题搜索神器</title>
+    <link href="https://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+        .div1{text-align:center;width:100%;}
+        .div2{width:980px;background:red;}
+            #footer {
+                height: 30px;
+                line-height: 30px;
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+                text-align: center;
+                background: #888;
+                color: #fff;
+                font-family: Arial;
+                font-size: 13px;
+                letter-spacing: 1px;
+            }
+        .bannerbox {
+            width:100%;
+            position:relative;
+            overflow:hidden;
+            height:200px;
+        }
+        .banner {
+            width:400px; /*图片宽度*/
+            position:absolute;
+            left:50%;
+            margin-left:-200px; /*图片宽度的一半*/
+        }
+        </style>
+</head>
+<body ng-controller="ctrl">
+        <br />
+        <br />
+        <br />
+    <div class="bannerbox">
+        <div class="banner">
+            <img src="1.png">
+        </div>
+    </div> 
+    <div class="search">
+        <div class="div1">
+        <form class="form-inline" action="search.php" method="post">
+            <input type="text" style="height: 50px; width: 460px;" class="form-control" ng-model="query" name="search" placeholder="输入关键字"/>
+            <input class="btn btn-danger btn-lg" role="button" type="submit" value="搜索"  id="btn"/>
+        </form></div>
+    </div>
+    <table width="100%" height="100%" cellpadding="0" cellspacing="0">
+            <tr>
+                <td valign="middle" align = "center">
+                    <font style='color:#ff0000; font-size:18px;'>1.本站仅用作学习强国挑战答题答案搜索<br/>2.所有问题及答案均来自网络<br/>3.作者不定时更新数据库！提交题目请使用客户端</font>
+                </td>
+            </tr>
+    </table>
+	<!--如部署自己服务器请保留底部版权-->
+    <div id="footer"><a href ="https://www.myepoch.cn" style="color:red;">MyEpoch</a> CopyRight@2020</div>
+
+
+</body>
+</html>
